@@ -6,56 +6,87 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Paul Laird</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Resets all CSS on the page -->
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+  <!-- Calls custom styling -->
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 
 <body>
-  <h1 id="logo">Paul Laird</h1>
+  <!-- Navigation bar to display in the upper right -->
+  <ul>
+    <!-- Name as the logo to display in upper left w/ box around it. -->
+    <div id="logo">Paul Laird</div>
+    <li>
+      <a class="menu" href="index.html">About</a>
+    </li>
+    <li class="divider">|</li>
+    <li>
+      <a class="menu" href="portfolio.html">Portfolio</a>
+    </li>
+    <li class="divider">|</li>
+    <li>
+      <a class="menu" href="contact.html">Contact</a>
+    </li>
+  </ul>
 
-  <nav>
-    <a href="index.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 
+
+  <!-- About Me section ensure that this is it's own element -->
   <section class="form">
+    <!-- About Me header -->
     <h1>Contact</h1>
+    <!-- Horizontal line -->
+    <hr>
     <form action="/my-handling-form-page" method="post">
       <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="user_name" value="John Smith">
       </div>
       <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_mail">
+        <label for="mail">E-mail</label>
+        <input type="email" id="mail" name="user_mail" value="example@gmail.com">
       </div>
       <div>
-        <label for="msg">Message:</label>
+        <label for="msg">Message</label>
         <textarea id="msg" name="user_message"></textarea>
       </div>
       <div class="button">
-        <button type="submit">Send!</button>
+        <button type="submit">Submit</button>
       </div>
     </form>
   </section>
 
-  <div>
-    <h2>Connect with Me</h2>
-    <a href="https://github.com/PaulLNH" target="_blank">
-      <img src="assets/images/github.png" alt="Check out my GitHub!" class="contactImg">
+  <!-- Contact me section -->
+  <div class="contact">
+    <!-- Heading, needs to be centered -->
+    <h1>Connect with Me</h1>
+    <!-- Horizontal line -->
+    <hr>
+    <!-- GitHub link -->
+    <a class="social" href="https://github.com/PaulLNH" target="_blank">
+      <!-- GitHub logo -->
+      <img src="assets/images/github.png" alt="Check out my GitHub!">
     </a>
-    <a href="https://www.linkedin.com/in/paul-laird/" target="_blank">
-      <img src="assets/images/linkedin.png" alt="Follow me on LinkedIn." class="contactImg">
+    <!-- LinkedIn link -->
+    <a class="social" href="https://www.linkedin.com/in/paul-laird/" target="_blank">
+      <!-- LinkedIn logo -->
+      <img src="assets/images/linkedin.png" alt="Follow me on LinkedIn.">
     </a>
-    <a href="https://stackoverflow.com/story/paullaird" target="_blank">
-      <img src="assets/images/stackoverflow.png" alt="See what I have to say on Stack Overflow" class="contactImg">
+    <!-- Stack Overflow link -->
+    <a class="social" href="https://stackoverflow.com/story/paullaird" target="_blank">
+      <!-- Stack Overflow logo -->
+      <img src="assets/images/stackoverflow.png" alt="See what I have to say on Stack Overflow">
     </a>
   </div>
 
+  <!-- Footer object bg color #666666 -->
   <footer>
-    <div>
-      <small>&copy; Copyright 2018, Paul Laird</small>
+    <div id="copyright">
+      <!-- small copyright text -->
+      <a href="http://laird.codes" target="_blank">
+        <small>&copy; Copyright 2018 Paul Laird</small>
+      </a>
     </div>
   </footer>
 </body>
